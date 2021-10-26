@@ -29,7 +29,7 @@ const postcss      = require('gulp-postcss');
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: rootFolder + 'dist'
+      baseDir: rootFolder
     }
   });
   done();
@@ -43,7 +43,7 @@ function twigHtml() {
         tTitle: themeTitle,
       }
     }))
-    .pipe(gulp.dest(distPath))
+    .pipe(gulp.dest(rootFolder))
     .pipe(browsersync.stream())
 }
 

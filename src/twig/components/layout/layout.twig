@@ -1,0 +1,19 @@
+{% extends "../../default/html.twig" %}
+
+{% block body %}
+<div class="page-layout d-flex flex-column">
+  <header class="pL-header w-100 sticky-top">
+    {% block header %}
+      {% include "../regions/header_top.twig" %}
+      {% include "../regions/branding.twig" %}
+      {% include "../regions/header.twig" %}
+    {% endblock %}
+  </header>
+
+  <div class="d-flex flex-grow-1">
+    <main class="pL-main flex-grow-1 p-4 border-left">
+      {% block main %}{% endblock %}
+    </main>
+  </div>
+</div>
+{% endblock %}

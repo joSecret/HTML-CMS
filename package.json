@@ -1,0 +1,43 @@
+{
+  "name": "JoDocTwig",
+  "version": "1.0.0",
+  "description": "Gulp used for HTML Theme",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joSecret/JoAM"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "author": "JoSecret.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "bootstrap": "^5.1.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-twig": "^1.2.0"
+  }
+}

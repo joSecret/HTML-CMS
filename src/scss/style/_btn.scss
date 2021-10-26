@@ -1,0 +1,13 @@
+.btn-transparent {
+  color: $white;
+  background-color: transparent;
+  border: none;
+  font-weight: $font-weight-light;
+  line-height: 1.3;
+
+  &:hover,
+  &.active {
+    color: $white;
+    background-color: rgba(var(--#{$variable-prefix}white-rgb), 0.1);
+  }
+}

@@ -1,5 +1,6 @@
+
 .btn-transparent {
-  color: $white;
+  color: $gray-700;
   background-color: transparent;
   border: none;
   font-weight: $font-weight-light;
@@ -7,7 +8,19 @@
 
   &:hover,
   &.active {
+    color: $primary;
+    background-color: rgba(var(--#{$variable-prefix}primary-rgb), 0.1);
+  }
+}
+
+.bg-primary {
+  .btn-transparent {
     color: $white;
-    background-color: rgba(var(--#{$variable-prefix}white-rgb), 0.1);
+
+    &:hover,
+    &.active {
+      color: $white;
+      background-color: rgba(var(--#{$variable-prefix}white-rgb), 0.1);
+    }
   }
 }

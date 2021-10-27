@@ -15,5 +15,17 @@
 
   <body>
     {% block body %}{% endblock %}
+
+    <div class="develop-section position-fixed bottom-0 start-0 end-0 p-2 bg-light d-flex">
+      <div class="text-muted me-3">Dev tools:</div>
+      <div class="ms-auto">
+        <div class="d-block d-sm-none"><span class="badge rounded-pill bg-primary">XS</span></div>
+        <div class="d-none d-sm-block d-md-none"><span class="badge rounded-pill bg-primary">SD</span></div>
+        <div class="d-none d-md-block d-lg-none"><span class="badge rounded-pill bg-primary">MD</span></div>
+        <div class="d-none d-lg-block d-xl-none"><span class="badge rounded-pill bg-primary">LG</span></div>
+        <div class="d-none d-xl-block d-xxl-none"><span class="badge rounded-pill bg-primary">XL</span></div>
+        <div class="d-none d-xxl-block"><span class="badge rounded-pill bg-primary">XXL</span></div>
+      </div>
+    </div>
   </body>
 </html>

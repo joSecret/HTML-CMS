@@ -1,0 +1,22 @@
+.node-news.ratio {
+  .node--bgImg {
+    transition: transform .3s linear;
+  }
+
+  &:hover {
+    .node--bgImg {
+      transform: scale(1.1);
+    }
+
+    .effect-underline {
+      background-size: 0 2px, 100% 2px;
+    }
+  }
+
+  & > .node--content {
+    @include padding(2rem);
+    top: inherit;
+    bottom: 0;
+    height: auto;
+  }
+}

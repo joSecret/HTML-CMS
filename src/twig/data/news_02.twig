@@ -1,0 +1,30 @@
+{% if view_mode == 'ratio-1x1' %}
+  <article class="node node-news node-news-{{ view_mode }} ratio ratio-1x1 rounded overflow-hidden">
+    <img class="node--bgImg" src='../../assets/news/02.jpg' alt="news 02">
+
+    <div class="node--content bg-gradient text-white">
+      <div class="badge badge-press-release mb-3">• PRESS RELEASE</div>
+      <h2>
+        <span class="effect-underline">
+          World Migratory Bird Day - Protect Birds: Be the Solution to Plastic Pollution
+        </span>
+      </h2>
+    </div>
+  </article>
+{% elseif view_mode == 'ratio-1x1-small' %}
+  <article class="node node-news node-news-{{ view_mode }} ratio ratio-1x1 rounded overflow-hidden">
+    <img class="node--bgImg" src='../../assets/news/02.jpg' alt="news 02">
+
+    <div class="node--content bg-gradient text-white">
+      <div class="badge badge-press-release mb-3">• PRESS RELEASE</div>
+      <h4>
+        <span class="effect-underline">
+          World Migratory Bird Day - Protect Birds: Be the Solution to Plastic Pollution
+        </span>
+      </h4>
+    </div>
+  </article>
+{% else %}
+
+{% endif %}
+

@@ -1,0 +1,22 @@
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.bg-gray-200 {
+  background-color: $gray-200;
+}
+
+.effect-underline {
+  text-decoration: none;
+  background-image: linear-gradient(rgba($white, 0), rgba($white, 0)),
+    linear-gradient($white, $white);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+
+  &:hover {
+    background-size: 0 2px, 100% 2px;
+  }
+}

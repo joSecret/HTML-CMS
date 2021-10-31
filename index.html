@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/dist/js/script-min.js"></script>
     <title>JoAM Theme</title>
   </head>
 
   <body>
     <div class="page-layout d-flex flex-column">
-  <header class="pL-header w-100 sticky-top">
-          <div class="region region-header-top bg-primary text-white py-2">
+  <div class="region region-header-top bg-primary text-white py-2">
   <div class="container">
     <div class="row justify-content-between">
       <div class="block block-getInvolved col-auto">
@@ -44,13 +44,18 @@
     </div>
   </div>
 </div>
-      <div class="region region-branding py-3">
-  <div class="container d-flex align-items-center">
+
+  <header id="header" class="pL-header w-100 sticky-top">
+          <div id="region-branding" class="region bg-white">
+    <div class="container d-flex align-items-center">
     <img src="dist/assets/logo.svg" class="site-logo me-3" alt="Logo">
-    <h3 class="site-name mb-0">Convention on the Conservation of Migratory Species of Wild Animals</h3>
+
+    <h3 class="site-name mb-0">
+      <span>Convention on the Conservation of Migratory Species of Wild Animals</span>
+    </h3>
   </div>
 </div>
-      <div class="region region-header">
+      <div class="region region-header bg-white">
   <nav class="navbar navbar-expand-lg navbar-light border-top border-bottom">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,13 +101,11 @@
       </button>
 
       <div class="collapse navbar-collapse flex-grow-0" id="searchBar">
-        <form class="d-flex">
-          <button class="btn btn-sm btn-transparent" type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16.001" height="15.998" viewBox="0 0 16.001 15.998" fill="currentColor">
-              <path d="M11.742,10.344a6.5,6.5,0,1,0-1.4,1.4h0a1.17,1.17,0,0,0,.1.115l3.85,3.85a1,1,0,0,0,1.415-1.414l-3.85-3.85a1.007,1.007,0,0,0-.115-.1ZM12,6.5A5.5,5.5,0,1,1,6.5,1,5.5,5.5,0,0,1,12,6.5Z" transform="translate(0.001 -0.002)"/>
-            </svg>
-          </button>
-        </form>
+        <button class="btn btn-sm btn-transparent" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.001" height="15.998" viewBox="0 0 16.001 15.998" fill="currentColor">
+            <path d="M11.742,10.344a6.5,6.5,0,1,0-1.4,1.4h0a1.17,1.17,0,0,0,.1.115l3.85,3.85a1,1,0,0,0,1.415-1.414l-3.85-3.85a1.007,1.007,0,0,0-.115-.1ZM12,6.5A5.5,5.5,0,1,1,6.5,1,5.5,5.5,0,0,1,12,6.5Z" transform="translate(0.001 -0.002)"/>
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -117,34 +120,126 @@
     </div>
   </div>
 
-  <div class="block block-front-grid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="ratio ratio-1x1 bg-primary">
-            1x1
+  <div class="section">
+    <div class="block block-front-grid">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="row gy-4">
+              <div class="col-12">
+                  <article class="node node-news node-news-ratio-1x1 ratio ratio-1x1 rounded overflow-hidden">
+    <img class="node--bgImg" src='../../assets/news/01.jpg' alt="news 01">
 
-            540x540 100%
-            540x157 30% 29.074%
+    <div class="node--content bg-gradient text-white">
+      <div class="badge badge-news mb-3">• News</div>
+      <h2>
+        <span class="effect-underline">
+          Giraffes Receive Much Needed Attention at CMS Expert Meeting
+        </span>
+      </h2>
+    </div>
+  </article>
 
-            540x260 48.148
-            540x128 23.703
-            540x258 47.777
+              </div>
+              <div class="col-12">
+                <article class="node node-news node-news-ratio-1x1 ratio ratio-21x9 rounded overflow-hidden">
+  <img class="node--bgImg" src='../../assets/news/01.jpg' alt="news 01">
 
-            4.4444
+  <div class="node--content bg-gradient text-white">
+    <div class="badge badge-publication mb-3">• Publication</div>
+    <h4>
+      <span class="effect-underline">
+        Report on the Impacts of plastic Pollution on Migratory Species in the Asia-Pacific Region 
+      </span>
+    </h4>
+  </div>
+</article>
+              </div>
+            </div>
           </div>
-          <div class="ratio ratio-21x9 bg-success">
-            21x9
+
+          <div class="col-md-6">
+            <div class="row gy-4">
+              <div class="col-12">
+                <article class="paragraph paragraph-pin ratio ratio-16x9 rounded overflow-hidden">
+  <img class="img-fluid paragraph--bgImg" src='../../assets/block-grid/pin.jpg' alt="pin">
+
+  <div class="paragraph--content text-white d-flex flex-column w-75">
+    <div class="h4 mb-auto">What are migratory Species & Why their conservation need international cooperations</div>
+
+    <div class="field-link">
+      <a href="#" class="text-white effect-underline">Learn more</a>
+    </div>
+  </div>
+</article>
+              </div>
+
+              <div class="col-12">
+                <article class="node node-news node-news-ratio-1x1 rounded overflow-hidden">
+  <div class="node--content bg-gradient text-white">
+    <div class="badge badge-meeting mb-3">• Meeting</div>
+    <h4>
+      <span class="effect-underline">
+        52nd Meeting o the standing. Committee
+      </span>
+    </h4>
+  </div>
+</article>
+              </div>
+
+              <div class="col-xl-6">
+                  <article class="node node-news node-news-ratio-1x1-small ratio ratio-1x1 rounded overflow-hidden">
+    <img class="node--bgImg" src='../../assets/news/02.jpg' alt="news 02">
+
+    <div class="node--content bg-gradient text-white">
+      <div class="badge badge-press-release mb-3">• PRESS RELEASE</div>
+      <h4>
+        <span class="effect-underline">
+          World Migratory Bird Day - Protect Birds: Be the Solution to Plastic Pollution
+        </span>
+      </h4>
+    </div>
+  </article>
+
+              </div>
+
+              <div class="col-xl-6">
+                  <article class="node node-news node-news-ratio-1x1-small ratio ratio-1x1 rounded overflow-hidden">
+    <img class="node--bgImg" src='../../assets/news/03.jpg' alt="news 02">
+
+    <div class="node--content bg-gradient text-white">
+      <div class="badge badge-op-ed mb-3">• OP-ED</div>
+      <h4>
+        <span class="effect-underline">
+          Far from Being our Enemies, Bats Need Protection now more than ever!
+        </span>
+      </h4>
+    </div>
+  </article>
+
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-md-6">
-          <div class="ratio ratio-1x1 bg-primary">
-            1x1
-          </div>
-          <div class="ratio ratio-21x9 bg-success">
-            21x9
-          </div>
+  <div class="section bg-gray-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          Quick access
+        </div>
+
+        <div class="col-lg-6">
+          Meetings
+        </div>
+
+        <div class="col-lg-3">
+          In Focus
+          Notifications
+          Latest Parties
         </div>
       </div>
     </div>

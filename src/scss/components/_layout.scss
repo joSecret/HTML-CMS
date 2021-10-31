@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  &.fixedTop {
+    .site-logo {
+      max-width: 32px;
+    }
+  }
+
+}
+
+#region-branding {
+  transition: padding .3s linear;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .site-logo {
+    max-height: 84px;
+    transition: max-height .3s linear;
+  }
+
+  &.onTop {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    .site-logo {
+      max-height: 42px;
+    }
+
+    .site-name span {
+      font-size: 80%;
+    }
+  }
+}

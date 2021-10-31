@@ -1,0 +1,1 @@
+function scrollFunction(){if(document.body.scrollTop>54||document.documentElement.scrollTop>54){let n=document.getElementById("region-branding");n.classList.contains("onTop")||n.classList.add("onTop")}else document.getElementById("region-branding").classList.remove("onTop")}window.onscroll=function(){scrollFunction()};

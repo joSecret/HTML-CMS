@@ -1,6 +1,14 @@
-<div class="region region-branding py-3">
+{% extends "region.twig" %}
+
+{% block regionName %}branding{% endblock %}
+{% block regionClasses %}bg-white{% endblock %}
+
+{% block regionContent %}
   <div class="container d-flex align-items-center">
     <img src="dist/assets/logo.svg" class="site-logo me-3" alt="Logo">
-    <h3 class="site-name mb-0">Convention on the Conservation of Migratory Species of Wild Animals</h3>
+
+    <h3 class="site-name mb-0">
+      <span>Convention on the Conservation of Migratory Species of Wild Animals</span>
+    </h3>
   </div>
-</div>
+{% endblock %}

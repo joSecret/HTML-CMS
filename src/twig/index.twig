@@ -8,34 +8,60 @@
     </div>
   </div>
 
-  <div class="block block-front-grid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="ratio ratio-1x1 bg-primary">
-            1x1
-
-            540x540 100%
-            540x157 30% 29.074%
-
-            540x260 48.148
-            540x128 23.703
-            540x258 47.777
-
-            4.4444
+  <div class="section">
+    <div class="block block-front-grid">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="row gy-4">
+              <div class="col-12">
+                {% include "/data/news_01.twig" with {'view_mode': 'ratio-1x1'} %}
+              </div>
+              <div class="col-12">
+                {% include "/data/grid-block/publication.twig" %}
+              </div>
+            </div>
           </div>
-          <div class="ratio ratio-21x9 bg-success">
-            21x9
+
+          <div class="col-md-6">
+            <div class="row gy-4">
+              <div class="col-12">
+                {% include "/data/grid-block/pin.twig" %}
+              </div>
+
+              <div class="col-12">
+                {% include "/data/grid-block/meeting.twig" %}
+              </div>
+
+              <div class="col-xl-6">
+                {% include "/data/news_02.twig" with {'view_mode': 'ratio-1x1-small'} %}
+              </div>
+
+              <div class="col-xl-6">
+                {% include "/data/news_03.twig" with {'view_mode': 'ratio-1x1-small'} %}
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-md-6">
-          <div class="ratio ratio-1x1 bg-primary">
-            1x1
-          </div>
-          <div class="ratio ratio-21x9 bg-success">
-            21x9
-          </div>
+  <div class="section bg-gray-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          Quick access
+        </div>
+
+        <div class="col-lg-6">
+          Meetings
+        </div>
+
+        <div class="col-lg-3">
+          In Focus
+          Notifications
+          Latest Parties
         </div>
       </div>
     </div>

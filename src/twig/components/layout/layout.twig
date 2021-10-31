@@ -2,9 +2,10 @@
 
 {% block body %}
 <div class="page-layout d-flex flex-column">
-  <header class="pL-header w-100 sticky-top">
+  {% include "../regions/header_top.twig" %}
+
+  <header id="header" class="pL-header w-100 sticky-top">
     {% block header %}
-      {% include "../regions/header_top.twig" %}
       {% include "../regions/branding.twig" %}
       {% include "../regions/header.twig" %}
     {% endblock %}
